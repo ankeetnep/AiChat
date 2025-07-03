@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom media queries for additional responsiveness */
+@media (max-width: 400px) {
+  .mobile-nav {
+    @apply flex-col space-y-2;
+  }
+
+  .mobile-text {
+    @apply text-sm;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .tablet-layout {
+    @apply grid-cols-2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .desktop-layout {
+    @apply grid-cols-3;
+  }
+}
+
+/* Custom responsive utilities */
+@layer utilities {
+  .text-responsive {
+    @apply text-sm sm:text-base lg:text-lg;
+  }
+
+  .padding-responsive {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .margin-responsive {
+    @apply mx-2 sm:mx-4 lg:mx-6;
+  }
+}
