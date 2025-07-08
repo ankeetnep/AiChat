@@ -44,6 +44,7 @@ const App = () => {
                 to="/cart"
                 className="text-sm sm:text-base text-gray-600 hover:text-blue-600 transition-colors px-3 py-2 rounded-md hover:bg-gray-100"
               >
+              
                 Cart <span className="bg-blue-500 text-white rounded-full px-2 py-1 text-xs ml-1">{select}</span>
               </Link>
             </div>
